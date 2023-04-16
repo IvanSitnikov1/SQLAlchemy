@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <h2>Книги жанра {{ genre_name }}</h2>
+    {% for book in books %}
+        <ul>
+            <li>Название: {{ book.name }}</li>
+            <li>Добавлено: {{ book.added }}</li>
+        </ul>
+    {% endfor %}
+{% endblock %}
